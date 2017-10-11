@@ -1,29 +1,19 @@
-<body>
+<body style="background-color: #4AE2FD">
 <div id="mainWrapper">
   <header> 
-    <!-- This is the header content. It contains Logo and links -->
-      <!-- Company Logo text --> 
-      LOGO </div>
     <div id="headerLinks"><a href="#" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a></div>
+    <div class="container">
+    <img src="/images/rainbowlogo.jpg" alt="logo" style="width:100%; align-items: center;">
   </header>
-  <section id="offer"> 
-    <h2>OFFER 50%</h2>
-    <p>REALLY AWESOME DISCOUNTS THIS JULY</p>
-  </section>
   <div id="content">
     <section class="sidebar"> 
       <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
       <input type="text"  id="search" value="search">
       <div id="menubar">
         <nav class="menu">
-          <h2><!-- Title for menuset 1 -->MENU ITEM 1 </h2>
+          <h2>Navigate</h2>
+            <%= erb :nav %> 
           <hr>
-          <ul>
-            <!-- List of links under menuset 1 -->
-            <li><a href="views/home.erb" title="Home">Home</a></li>
-            <li><a href="views/about.erb" title="About">What is PennyJuice?</a></li>
-            <li><a href="views/contact.erb" title="Contact">Contact PennyJuice!</a></li>
-          </ul>
         </nav>
       
       </div>
@@ -32,20 +22,20 @@
       <div class="productRow"><!-- Each product row contains info of 3 elements -->
         <article class="productInfo"><!-- Each individual product description -->
           <div><img alt="sample" src="/images/appleJuice.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Apple</p>
+          <p class="price">Apple</p>
+          <p class="productContent">Crisp, classic, refreshing!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"><!-- Each individual product description -->
           <div><img alt="sample" src="/images/strawberryBananaJuice.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Strawberry Banana</p>
+          <p class="price">Strawberry Banana</p>
+          <p class="productContent">A classic fruit punch mix!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"> <!-- Each individual product description -->
           <div><img alt="sample" src="/images/citrusPunch.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Citrus Punch</p>
+          <p class="price">Citrus Punch</p>
+          <p class="productContent">A lemon-lime twisted flavor sensation!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
@@ -53,59 +43,45 @@
         <!-- Each product row contains info of 3 elements -->
         <article class="productInfo"> <!-- Each individual product description -->
           <div><img alt="sample" src="/images/peachMango.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Peach Mango</p>
+          <p class="price">Peach Mango</p>
+          <p class="productContent">A light and refreshing tropical twist!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"> <!-- Each individual product description -->
           <div><img alt="sample" src="/images/blueRaspberry.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Blue Raspberry</p>
+          <p class="price">Blue Raspberry</p>
+          <p class="productContent">Tart, sweet, and tangy. A timeless favorite!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"><!-- Each individual product description -->
           <div><img alt="sample" src="/images/greenWatermelon.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Green Watermelon</p>
+          <p class="price">Green Watermelon</p>
+          <p class="productContent">Tart and refreshing!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
       <div class="productRow">
         <article class="productInfo"> <!-- Each individual product description -->
           <div><img alt="sample" src="/images/cranApple.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Cran-Apple</p>
+          <p class="price">CranApple</p>
+          <p class="productContent">A tart classic!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"><!-- Each individual product description -->
           <div><img alt="sample" src="/images/berry.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Berry Punch</p>
+          <p class="price">Berry Punch</p>
+          <p class="productContent">Blackberries, blue berries, stawberries, oh my!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
         <article class="productInfo"><!-- Each individual product description -->
           <div><img alt="sample" src="/images/juicekid.jpg"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Orange Pineapple</p>
+          <p class="price">Orange Pineapple</p>
+          <p class="productContent">A tropical twist on a classic favorite!</p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
     </section>
   </div>
-  <footer> 
-    <!-- This is the footer with default 3 divs -->
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-    </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-    </div>
-    <div class="footerlinks">
-      <p><a href="#" title="Link">Link 1 </a></p>
-      <p><a href="#" title="Link">Link 2</a></p>
-      <p><a href="#" title="Link">Link 3</a></p>
-    </div>
-  </footer>
 </div>
 </body>
 </html>

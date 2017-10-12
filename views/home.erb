@@ -1,23 +1,26 @@
 
 <body>
 
-  <header> 
-    <div id="headerLinks"><a href="#" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a></div>
+   <header>
+    <div id="headerLinks">
+      <input type="text"  id="search" value="search">
+      <a href="#" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a>
+    </div>
   </header>
 
   <div id="content">
     <section class="sidebar">
       <div id="menubar">
         <nav class="menu">
- 			    <%= erb :nav %>
+ 			    <!--<%= erb :nav %>-->
         </nav>
       </div>
     </section>
     <section id="offer">
-      <!--<p id="home">Home</p>
-      <p id="Products">Products</p>
-      <p id="About">About</p>
-      <p id="Contact">Contact</p>-->
+      <a id="home" href="/">Home</a>
+      <a id="products" href="/products">Products</a>
+      <a id="about" href="/about">About</a>
+      <a id="contact_us" href="/contact">Contact</a>
       <h1 id="slogan">Rainbows of Exciting Flavors!</h1>
     </section>
   </div>

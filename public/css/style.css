@@ -19,12 +19,17 @@ a:hover {
 }
 /*header*/
 header {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Gloria Hallelujah', cursive;
 	color: rgba(146,146,146,1);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	width: 100%;
+	margin-left: 0%;
+}
+
+header input {
+	float: left;
 	margin-left: 1%;
 }
 /* Logo placeholder*/
@@ -38,9 +43,45 @@ header {
 	background-color: rgba(190,190,190,1.00);
 }
 
-#home {
-	transform: rotate(-7deg);
+#offer a {
+	float: left;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
+
 }
+
+#offer a:hover {
+	color: #FFD700;
+	text-decoration: none;
+}
+#home {
+	transform: rotate(-33deg);
+	margin-left: 20%;
+	margin-top: 8%;
+}
+
+#products {
+	transform: rotate(-14deg);
+	margin-left: 6%;
+	margin-top: 2%;
+}
+
+#about {
+	transform: rotate(16deg);
+	margin-left: 16%;
+	margin-top: 2.7%;
+}
+
+#contact_us {
+	transform: rotate(30deg);
+	margin-left: 6%;
+	margin-top: 8.4%;
+}
+
+
 /* div for Links in header */
 #headerLinks {
 	float: left;
@@ -49,16 +90,22 @@ header {
 	text-align: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0);
 
 }
 /* Links in header */
 #headerLinks a {
-	text-decoration: none;
+	/*text-decoration: none;
 	color: rgba(146,146,146,1.00);
 	padding-left: 66px;
-	font-size: 14px;
+	font-size: 14px;*/
+	padding-left: 5%;
 	padding-right: 10px;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
 }
 /* Offer text banner*/
 #offer {
@@ -73,7 +120,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 98%;
-	height: 514px;
+	height: 520px;
 	float: left;
 	position: relative;
 	margin-left: -200px;
@@ -82,27 +129,47 @@ header {
 }
 
 #slogan {
-	padding-top: 39%;
+	padding-top: 38.5%;
 	font-size: 36px;
+	font-family: 'Gloria Hallelujah', cursive;
 	font-weight: bold;
-	font-style: italic;
+	/*font-style: italic;*/
 	color: rgba(240, 248, 255, 1);
 	text-shadow: 2px 2px 3px #000000;
-
 }
 
 
 #contact {
 	position: relative;
 	float: left;
-	background-color: rgba(246,246,246,0.7);
-	margin-left: 34%;
-	margin-top: 18%;
+	background-color: rgba(246,246,246,0.8);
+	margin-left: 32.5%;
+	margin-top: 8%;
 	width: 400px;
 	height: 290px;
 	padding: 15px;
 	font-weight: bold;
 	text-align: left;
+}
+
+#about_us {
+	position: relative;
+	float: left;
+	/*background-color: rgba(246,246,246,0.8);*/
+	margin-left: 32.5%;
+	margin-top: 6%;
+	width: 400px;
+	height: 290px;
+	padding: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 14px;
+}
+
+.about2 {
+	margin-top: 40%;
+	color: black;
 }
 
 input[type="text"] {

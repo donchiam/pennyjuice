@@ -1,45 +1,18 @@
 body {
+
 	background-image: url("/images/rainbow_colors.png");
 	background-size: cover;
-	background-repeat: no-repeat;
-	
-	
+	background-repeat: no-repeat;	
 }
 
-h1 {
-	color: red;
-}
-body {
+/*body {
 	background: #FDE631;
 	
-}
-.container.img {
-	align-items: center;
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 50%;
-    height: 50%;
-}
+}*/
 
-.centered {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#mainWrapper {
+	width: 100%;
 }
-
-#wrapper .text {
-position:relative;
-bottom:30px;
-left:0px;
-visibility:hidden;
-}
-
-#wrapper:hover .text {
-visibility:visible;
-}
-
 @charset "utf-8";
 /* Global Styles */
 a:hover {
@@ -48,10 +21,18 @@ a:hover {
 /*header*/
 header {
 	font-family: 'Gloria Hallelujah', cursive;
-	color: rgba(146,146,146,1.00);
+	color: rgba(146,146,146,1);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
+	width: 100%;
+	margin-left: 0%;
+
+}
+
+header input {
+	float: left;
+	margin-left: 1%;
 }
 /* Logo placeholder*/
 #logo {
@@ -63,41 +44,268 @@ header {
 	color: rgba(255,255,255,1.00);
 	background-color: rgba(190,190,190,1.00);
 }
+
+#offer a {
+	float: left;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
+
+}
+
+#offer a:hover {
+	color: #FFD700;
+	text-decoration: none;
+}
+#home {
+	transform: rotate(-33deg);
+	margin-left: 20%;
+	margin-top: 8%;
+}
+
+#products {
+	transform: rotate(-14deg);
+	margin-left: 6%;
+	margin-top: 2%;
+}
+
+#about {
+	transform: rotate(16deg);
+	margin-left: 16%;
+	margin-top: 2.7%;
+}
+
+#contact_us {
+	transform: rotate(30deg);
+	margin-left: 6%;
+	margin-top: 8.4%;
+}
+
+
 /* div for Links in header */
 #headerLinks {
 	float: left;
-	width: calc( 100% - 139px );
+	/*width: calc( 100% - 139px );*/
+	width: 98%;
 	text-align: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: rgba(255,255,255,0);
 
 }
 /* Links in header */
 #headerLinks a {
-	text-decoration: none;
-	color: #9B62FF;
+	/*text-decoration: none;
+	color: rgba(146,146,146,1.00);
 	padding-left: 66px;
-	font-size: 14px;
+	font-size: 14px;*/
+	padding-left: 5%;
 	padding-right: 10px;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
 }
 /* Offer text banner*/
 #offer {
 	font-family: 'Montserrat', sans-serif;
-	clear: both;
-	background-color: rgba(246,246,246,1.00);
-	color: rgba(146,146,146,1.00);
-	padding-left: 115px;
+	/*clear: both;*/
+	/*background-color: rgba(246,246,246,1.00);*/
+	/*color: rgba(146,146,146,1.00);*/
+	/*padding-left: 115px;
 	padding-top: 57px;
-	padding-bottom: 57px;
+	padding-bottom: 57px;*/
+	background-image: url("/images/rainbow_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 98%;
+	height: 520px;
+	float: left;
+	position: relative;
+	margin-left: -200px;
+	text-align: center;
+	
+
+}
+
+#slogan {
+
+	padding-top: 14.5%;
+	font-size: 36px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	/*font-style: italic;*/
+	/*color: rgba(240, 248, 255, 1);*/
+	/*text-shadow: 2px 2px 3px #000000;*/
+	background: linear-gradient(360deg, purple 20%, yellow 20%, blue 24%, green 30%, red 20%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	line-height: 200px;
+  	
+}
+
+
+#contact {
+	position: relative;
+	float: left;
+	background-color: rgba(246,246,246,0.8);
+	margin-left: 32.5%;
+	margin-top: 8%;
+	width: 400px;
+	height: 290px;
+	padding: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 16px;
+}
+
+#about_us {
+	position: relative;
+	float: left;
+	/*background-color: rgba(246,246,246,0.8);*/
+	margin-left: 32.5%;
+	margin-top: 6%;
+	width: 400px;
+	height: 290px;
+	padding: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 16px;
+}
+
+.about1 {
+	width: 60%;
+	float: left;
+	margin-top: -4%;
+	margin-left: -10%;
+	color: blue;
+	transform: rotate(-20deg);
+
+}
+
+.about2 {
+	width: 55%;
+	float: right;
+	margin-top: 10%;
+	margin-right: -25%;
+	color: red;
+	transform: rotate(20deg);
+}
+
+.about3 {
+	float: left;
+	margin-top: 28%;
+	font-weight: bold;
+	color: yellow;
+}
+
+input[type="text"] {
+    width: 370px;
+}
+
+input[type="email"] {
+    width: 370px;
+}
+
+textarea {
+	width: 370px;
+	height: 120px;
 }
 /* Main content of the site */
 #content {
 	clear: both;
 	overflow: auto;
 	padding-top: 29px;
+	z-index: 3;
 }
+
+
+.orders {
+	width: 400px;
+	height: 550px;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	margin-left: 65%;
+	padding-left: 60px;
+	padding-top: 0px;
+	margin-top: 5%;
+	z-index: 1;
+	display: none;
+	border: 2px solid yellow;
+	font-size: 18px;
+	color: blue;
+}
+
+#orders_header {
+	font-size: 24px;
+	padding-left: 20%;
+	font-family: 'Montserrat', sans-serif;
+	color: green;
+
+}
+
+.close {
+	float: right;
+	font-size: 36px;
+	margin-right: 5px;
+	margin-top: -16px;
+	color: purple;
+}
+
+.added {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.quantity {
+	text-align: center;
+	color: red;
+}
+th {
+	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
+	color: orange;
+}
+
+th, td {
+	padding: 5px 45px 5px 10px;
+	text-align: left;
+}
+
+#apple, #strawBan, #citrus, #peachMango, #blueRasp, #greenWater, #cranApple, #berryPunch, #orangePine {
+	display: none;
+}
+#order_footer {
+	margin-top: 20%;
+	position: relative fixed;
+	
+}
+
+/*#appleCount, #strawBanCount, #citrusCount, #peachMangoCount, #blueRaspCount, #greenWaterCount, #cranAppleCount, #berryPunchCount, #orangePineCount {
+	display: none;
+}*/
+
+#checkout {
+	position: relative;
+	top: -48px;
+	width: 85%;
+	background-color: #9B62FF;
+	height: 35px;
+	color: white;
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	font-family: 'Gloria Hallelujah', cursive;
+
+}
+
 /* Sidebar */
-#content .sidebar {
+.sidebar {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(146,146,146,1.00);
 	float: left;
@@ -110,23 +318,25 @@ header {
 	height: 500px;
 }
 /* main content of the site */
-#content .mainContent {
+.mainContent {
+	position: relative;
 	float: left;
-	width: 70%;
+	width: 150%;
 	text-align: center;
-	padding-left: 4%;
+	padding-left: 0%;
+	margin-top: 2%
 }
-#content .mainContent .img {
+.mainContent .img {
 	border-radius: 50%;
 }
-#content .sidebar #menubar {
+.sidebar #menubar {
 	text-align: left;
 	color: rgba(146,146,146,1.00);
 	position: relative;
 	left: 0%;
 }
 /* Search field in sidebar */
-#content .sidebar #search {
+.sidebar #search {
 	width: 100%;
 	border-radius: 0px;
 	height: 42px;
@@ -150,7 +360,7 @@ header {
 	padding-top: 12px;
 }
 /* Product rows for catalog */
-#content .mainContent .productRow {
+.mainContent .productRow {
 	overflow: auto;
 	color: rgba(146,146,146,1.00);
 }
@@ -160,6 +370,7 @@ header {
 	padding-left: 5%;
 	padding-right: 5%;
 	width: 22%;
+
 }
 /* Prices of a products in catalog */
 .productRow .productInfo .price {
@@ -416,10 +627,12 @@ header #headerLinks a {
 	padding-left: 8%;
 }
 /* Main content which excludes the sidebar */
-#mainwrapper #content .mainContent {
+.mainContent {
 	margin-top: -81px;
 	text-align: center;
 	width: 100%;
 	padding-left: 0px;
 }
+
+
 }

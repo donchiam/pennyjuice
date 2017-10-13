@@ -129,13 +129,19 @@ header input {
 }
 
 #slogan {
-	padding-top: 38.5%;
+
+	padding-top: 14.5%;
 	font-size: 36px;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-weight: bold;
 	/*font-style: italic;*/
-	color: rgba(240, 248, 255, 1);
-	text-shadow: 2px 2px 3px #000000;
+	/*color: rgba(240, 248, 255, 1);*/
+	/*text-shadow: 2px 2px 3px #000000;*/
+	background: linear-gradient(360deg, purple 20%, yellow 20%, blue 24%, green 30%, red 20%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	line-height: 200px;
+  	
 }
 
 
@@ -150,6 +156,8 @@ header input {
 	padding: 15px;
 	font-weight: bold;
 	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 16px;
 }
 
 #about_us {
@@ -164,12 +172,33 @@ header input {
 	font-weight: bold;
 	text-align: left;
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 14px;
+	font-size: 16px;
+}
+
+.about1 {
+	width: 60%;
+	float: left;
+	margin-top: -1%;
+	margin-left: -8%;
+	color: blue;
+	transform: rotate(-9deg);
+
 }
 
 .about2 {
-	margin-top: 40%;
-	color: black;
+	width: 55%;
+	float: right;
+	margin-top: 10%;
+	margin-right: -25%;
+	color: red;
+	transform: rotate(12deg);
+}
+
+.about3 {
+	float: left;
+	margin-top: 25%;
+	font-weight: bold;
+	color: yellow;
 }
 
 input[type="text"] {

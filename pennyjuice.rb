@@ -1,6 +1,7 @@
 require "sinatra"
 require "sendgrid-ruby"
 
+
 get '/' do
 	erb :home
 end
@@ -15,4 +16,8 @@ end
 
 get "/contact" do
 	erb :contact
+end
+
+get "/cart" do
+	erb :cart
 end

@@ -1,45 +1,17 @@
 body {
 	background-image: url("/images/rainbow_colors.png");
 	background-size: cover;
-	background-repeat: no-repeat;
-	
-	
+	background-repeat: no-repeat;	
 }
 
-h1 {
-	color: red;
-}
-body {
+/*body {
 	background: #FDE631;
 	
-}
-.container.img {
-	align-items: center;
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 50%;
-    height: 50%;
-}
+}*/
 
-.centered {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#mainWrapper {
+	width: 100%;
 }
-
-#wrapper .text {
-position:relative;
-bottom:30px;
-left:0px;
-visibility:hidden;
-}
-
-#wrapper:hover .text {
-visibility:visible;
-}
-
 @charset "utf-8";
 /* Global Styles */
 a:hover {
@@ -48,10 +20,17 @@ a:hover {
 /*header*/
 header {
 	font-family: 'Gloria Hallelujah', cursive;
-	color: rgba(146,146,146,1.00);
+	color: rgba(146,146,146,1);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
+	width: 100%;
+	margin-left: 0%;
+}
+
+header input {
+	float: left;
+	margin-left: 1%;
 }
 /* Logo placeholder*/
 #logo {
@@ -63,51 +42,200 @@ header {
 	color: rgba(255,255,255,1.00);
 	background-color: rgba(190,190,190,1.00);
 }
+
+#offer a {
+	float: left;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
+
+}
+
+#offer a:hover {
+	color: #FFD700;
+	text-decoration: none;
+}
+#home {
+	transform: rotate(-33deg);
+	margin-left: 20%;
+	margin-top: 8%;
+}
+
+#products {
+	transform: rotate(-14deg);
+	margin-left: 6%;
+	margin-top: 2%;
+}
+
+#about {
+	transform: rotate(16deg);
+	margin-left: 16%;
+	margin-top: 2.7%;
+}
+
+#contact_us {
+	transform: rotate(30deg);
+	margin-left: 6%;
+	margin-top: 8.4%;
+}
+
+
 /* div for Links in header */
 #headerLinks {
 	float: left;
-	width: calc( 100% - 139px );
+	/*width: calc( 100% - 139px );*/
+	width: 98%;
 	text-align: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: rgba(255,255,255,0);
 
 }
 /* Links in header */
 #headerLinks a {
-	text-decoration: none;
-	color: #9B62FF;
+	/*text-decoration: none;
+	color: rgba(146,146,146,1.00);
 	padding-left: 66px;
-	font-size: 14px;
+	font-size: 14px;*/
+	padding-left: 5%;
 	padding-right: 10px;
+	text-decoration: none;
+	color: rgba(240, 248, 255, 1);
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
 }
 /* Offer text banner*/
 #offer {
 	font-family: 'Montserrat', sans-serif;
-	clear: both;
-	background-color: rgba(246,246,246,1.00);
-	color: rgba(146,146,146,1.00);
-	padding-left: 115px;
+	/*clear: both;*/
+	/*background-color: rgba(246,246,246,1.00);*/
+	/*color: rgba(146,146,146,1.00);*/
+	/*padding-left: 115px;
 	padding-top: 57px;
-	padding-bottom: 57px;
+	padding-bottom: 57px;*/
+	background-image: url("/images/rainbow_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 98%;
+	height: 520px;
+	float: left;
+	position: relative;
+	margin-left: -200px;
+	text-align: center;
+
+}
+
+#slogan {
+
+	padding-top: 14.5%;
+	font-size: 36px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	/*font-style: italic;*/
+	/*color: rgba(240, 248, 255, 1);*/
+	/*text-shadow: 2px 2px 3px #000000;*/
+	background: linear-gradient(360deg, purple 20%, yellow 20%, blue 24%, green 30%, red 20%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	line-height: 200px;
+  	
+}
+
+
+#contact {
+	position: relative;
+	float: left;
+	background-color: rgba(246,246,246,0.8);
+	margin-left: 32.5%;
+	margin-top: 8%;
+	width: 400px;
+	height: 290px;
+	padding: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 16px;
+}
+
+#about_us {
+	position: relative;
+	float: left;
+	/*background-color: rgba(246,246,246,0.8);*/
+	margin-left: 32.5%;
+	margin-top: 6%;
+	width: 400px;
+	height: 290px;
+	padding: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 16px;
+}
+
+.about1 {
+	width: 60%;
+	float: left;
+	margin-top: -1%;
+	margin-left: -8%;
+	color: blue;
+	transform: rotate(-9deg);
+
+}
+
+.about2 {
+	width: 55%;
+	float: right;
+	margin-top: 10%;
+	margin-right: -25%;
+	color: red;
+	transform: rotate(12deg);
+}
+
+.about3 {
+	float: left;
+	margin-top: 25%;
+	font-weight: bold;
+	color: yellow;
+}
+
+input[type="text"] {
+    width: 370px;
+}
+
+input[type="email"] {
+    width: 370px;
+}
+
+textarea {
+	width: 370px;
+	height: 120px;
 }
 /* Main content of the site */
 #content {
 	clear: both;
 	overflow: auto;
 	padding-top: 29px;
+	z-index: 3;
 }
 /* Sidebar */
 #content .sidebar {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
+	/*color: rgba(146,146,146,1.00);*/
 	float: left;
 	width: 20%;
-	padding-left: 3%;
+	padding-left: 4%;
 	padding-right: 3%;
 	text-align: center;
-	background-color: rgba(246,246,246,1.00);
-	padding-top: 36px;
-	height: 500px;
+	background-color: rgba(246,246,246,0);
+	padding-top: 0px;
+	height: 514px;
+	position: relative;
+	z-index: 1;
+	margin-left: -2%;
+
 }
 /* main content of the site */
 #content .mainContent {
@@ -115,13 +243,12 @@ header {
 	width: 70%;
 	text-align: center;
 	padding-left: 4%;
+	font-size: 36px;
 }
-#content .mainContent .img {
-	border-radius: 50%;
-}
+/*menubar's properties for menus in sidebar */
 #content .sidebar #menubar {
 	text-align: left;
-	color: rgba(146,146,146,1.00);
+	/*color: rgba(146,146,146,1.00);*/
 	position: relative;
 	left: 0%;
 }
@@ -131,23 +258,27 @@ header {
 	border-radius: 0px;
 	height: 42px;
 	text-align: center;
-	color: rgba(208,207,207,1.00);
-	font-size: 14px;
-	;
+	/*color: rgba(208,207,207,1.00);*/
+	/*font-size: 14px;
+	;*/
 	margin-bottom: 21px;
 }
+
 /* Whole page content */
 #mainWrapper {
 	width: 80%;
 	padding-left: 10%;
 }
 /*menu elements */
+
+
 .menu ul li {
 	list-style-type: none;
-	font-size: x-large;
+	/*font-size: x-large;*/
 	position: relative;
 	left: -35px;
 	padding-top: 12px;
+	
 }
 /* Product rows for catalog */
 #content .mainContent .productRow {
@@ -163,8 +294,8 @@ header {
 }
 /* Prices of a products in catalog */
 .productRow .productInfo .price {
-	font-family:'Gloria Hallelujah', cursive;;
-	color: white;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
 	font-size: 22px;
 	position: relative;
 	top: -20px;
@@ -177,7 +308,7 @@ header {
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
-	color: white;
+	color: rgba(146,146,146,1.00);
 	white-space: pre-wrap;
 }
 /* Buy button for products in catalog */
@@ -185,30 +316,62 @@ header {
 	position: relative;
 	top: -48px;
 	width: 84%;
-	background-color: #9B62FF;
+	background-color: rgba(208,207,207,1.00);
 	height: 35px;
-	color: white;
+	color: rgba(255,255,255,1.00);
 	border-style: none;
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-top: 8px;
-	font-family: 'Gloria Hallelujah', cursive;
 }
-
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(208,207,207,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
 /* Product's images in catalog */
 .productInfo div img {
 	width: 100%;
 }
 /*Links in sidebar */
 .sidebar #menubar .menu ul li a {
+	/*color: rgba(146,146,146,1.00);*/
 	text-decoration: none;
-	color: #9B62FF
-	font-family: 'Gloria Hallelujah', cursive; 
+	color: rgba(240, 248, 255, 1);
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #000000;
+
 }
 .sidebar #menubar .menu ul li a:hover {
-	color: white;
+	color: #FFD700;
 	text-decoration: none;
-
 }
 /* Menu headings in sidebar */
 #menubar .menu h2 {
@@ -217,8 +380,6 @@ header {
 /*Links under menus in sidebar */
 #menubar .menu ul li a {
 	font-size: 14px;
-	color: #9B62FF
-	font-family: 'Gloria Hallelujah', cursive; 
 }
 /* Menus in sidebar */
 .sidebar #menubar .menu {
@@ -236,6 +397,8 @@ footer .footerlinks {
 	display: none;
 }
 /* sidebar */
+
+
 #content .sidebar {
 	float: none;
 	width: 100%;
@@ -301,9 +464,13 @@ footer .footerlinks {
 	width: 95%;
 	margin-top: 40px;
 }
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
 /* Content holders in catalog view */
 .productRow .productInfo .productContent {
-	font-size: 30px;
+	font-size: 16px;
 }
 /* Buy buttons in catalog view */
 .productRow .productInfo .buyButton {
@@ -357,7 +524,6 @@ footer .footerlinks p {
 @media screen and (max-width:480px) {
 /*Container for links in header */
 #mainWrapper header #headerLinks {
-	align-items: center;
 	width: 100%;
 	text-align: center;
 	background-color: rgba(190,190,190,1.00);

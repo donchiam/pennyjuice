@@ -1,4 +1,5 @@
 body {
+
 	background-image: url("/images/rainbow_colors.png");
 	background-size: cover;
 	background-repeat: no-repeat;	
@@ -26,6 +27,7 @@ header {
 	font-weight: 400;
 	width: 100%;
 	margin-left: 0%;
+
 }
 
 header input {
@@ -125,6 +127,7 @@ header input {
 	position: relative;
 	margin-left: -200px;
 	text-align: center;
+	
 
 }
 
@@ -178,10 +181,10 @@ header input {
 .about1 {
 	width: 60%;
 	float: left;
-	margin-top: -1%;
-	margin-left: -8%;
+	margin-top: -4%;
+	margin-left: -10%;
 	color: blue;
-	transform: rotate(-9deg);
+	transform: rotate(-20deg);
 
 }
 
@@ -191,12 +194,12 @@ header input {
 	margin-top: 10%;
 	margin-right: -25%;
 	color: red;
-	transform: rotate(12deg);
+	transform: rotate(20deg);
 }
 
 .about3 {
 	float: left;
-	margin-top: 25%;
+	margin-top: 28%;
 	font-weight: bold;
 	color: yellow;
 }
@@ -220,68 +223,144 @@ textarea {
 	padding-top: 29px;
 	z-index: 3;
 }
-/* Sidebar */
-#content .sidebar {
-	font-family: 'Montserrat', sans-serif;
-	/*color: rgba(146,146,146,1.00);*/
-	float: left;
-	width: 20%;
-	padding-left: 4%;
-	padding-right: 3%;
-	text-align: center;
-	background-color: rgba(246,246,246,0);
+
+
+.orders {
+	width: 400px;
+	height: 550px;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	margin-left: 65%;
+	padding-left: 60px;
 	padding-top: 0px;
-	height: 514px;
-	position: relative;
+	margin-top: 5%;
 	z-index: 1;
-	margin-left: -2%;
+	display: none;
+	border: 2px solid yellow;
+	font-size: 18px;
+	color: blue;
+}
+
+#orders_header {
+	font-size: 24px;
+	padding-left: 20%;
+	font-family: 'Montserrat', sans-serif;
+	color: green;
 
 }
-/* main content of the site */
-#content .mainContent {
-	float: left;
-	width: 70%;
-	text-align: center;
-	padding-left: 4%;
+
+.close {
+	float: right;
 	font-size: 36px;
+	margin-right: 5px;
+	margin-top: -16px;
+	color: purple;
 }
-/*menubar's properties for menus in sidebar */
-#content .sidebar #menubar {
+
+.added {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.quantity {
+	text-align: center;
+	color: red;
+}
+th {
+	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
+	color: orange;
+}
+
+th, td {
+	padding: 5px 45px 5px 10px;
 	text-align: left;
-	/*color: rgba(146,146,146,1.00);*/
+}
+
+#apple, #strawBan, #citrus, #peachMango, #blueRasp, #greenWater, #cranApple, #berryPunch, #orangePine {
+	display: none;
+}
+#order_footer {
+	margin-top: 20%;
+	position: relative fixed;
+	
+}
+
+/*#appleCount, #strawBanCount, #citrusCount, #peachMangoCount, #blueRaspCount, #greenWaterCount, #cranAppleCount, #berryPunchCount, #orangePineCount {
+	display: none;
+}*/
+
+#checkout {
+	position: relative;
+	top: -48px;
+	width: 85%;
+	background-color: #9B62FF;
+	height: 35px;
+	color: white;
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+	font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+/* Sidebar */
+.sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color: rgba(246,246,246,1.00);
+	padding-top: 36px;
+	height: 500px;
+}
+/* main content of the site */
+.mainContent {
+	position: relative;
+	float: left;
+	width: 150%;
+	text-align: center;
+	padding-left: 0%;
+	margin-top: 2%
+}
+.mainContent .img {
+	border-radius: 50%;
+}
+.sidebar #menubar {
+	text-align: left;
+	color: rgba(146,146,146,1.00);
 	position: relative;
 	left: 0%;
 }
 /* Search field in sidebar */
-#content .sidebar #search {
+.sidebar #search {
 	width: 100%;
 	border-radius: 0px;
 	height: 42px;
 	text-align: center;
-	/*color: rgba(208,207,207,1.00);*/
-	/*font-size: 14px;
-	;*/
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+	;
 	margin-bottom: 21px;
 }
-
 /* Whole page content */
 #mainWrapper {
 	width: 80%;
 	padding-left: 10%;
 }
 /*menu elements */
-
-
 .menu ul li {
 	list-style-type: none;
-	/*font-size: x-large;*/
+	font-size: x-large;
 	position: relative;
 	left: -35px;
 	padding-top: 12px;
-	
 }
 /* Product rows for catalog */
-#content .mainContent .productRow {
+.mainContent .productRow {
 	overflow: auto;
 	color: rgba(146,146,146,1.00);
 }
@@ -291,11 +370,12 @@ textarea {
 	padding-left: 5%;
 	padding-right: 5%;
 	width: 22%;
+
 }
 /* Prices of a products in catalog */
 .productRow .productInfo .price {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
+	font-family:'Gloria Hallelujah', cursive;;
+	color: white;
 	font-size: 22px;
 	position: relative;
 	top: -20px;
@@ -308,7 +388,7 @@ textarea {
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
-	color: rgba(146,146,146,1.00);
+	color: white;
 	white-space: pre-wrap;
 }
 /* Buy button for products in catalog */
@@ -316,62 +396,30 @@ textarea {
 	position: relative;
 	top: -48px;
 	width: 84%;
-	background-color: rgba(208,207,207,1.00);
+	background-color: #9B62FF;
 	height: 35px;
-	color: rgba(255,255,255,1.00);
+	color: white;
 	border-style: none;
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-top: 8px;
+	font-family: 'Gloria Hallelujah', cursive;
 }
-/* footer */
-#mainWrapper footer {
-	clear: both;
-	overflow: auto;
-	background-color: rgba(208,207,207,1.00);
-	font-family: source-sans-pro, sans-serif;
-	font-style: normal;
-	font-weight: 200;
-	line-height: 1.8;
-	padding-top: 22px;
-	padding-left: 22px;
-	text-align: center;
-	padding-bottom: 22px;
-	padding-right: 22px;
-}
-/*Each footer content */
-#mainWrapper footer div {
-	width: 27%;
-	float: left;
-	padding-left: 4%;
-	padding-right: 2%;
-	color: rgba(255,255,255,1.00);
-	text-align: justify;
-}
-/* Links in footer */
-footer div a {
-	color: rgba(146,146,146,1.00);
-	display: block;
-	text-decoration: none;
-	text-align: center;
-}
+
 /* Product's images in catalog */
 .productInfo div img {
 	width: 100%;
 }
 /*Links in sidebar */
 .sidebar #menubar .menu ul li a {
-	/*color: rgba(146,146,146,1.00);*/
 	text-decoration: none;
-	color: rgba(240, 248, 255, 1);
-	font-size: 28px;
-	font-weight: bold;
-	text-shadow: 2px 2px 8px #000000;
-
+	color: #9B62FF
+	font-family: 'Gloria Hallelujah', cursive; 
 }
 .sidebar #menubar .menu ul li a:hover {
-	color: #FFD700;
+	color: white;
 	text-decoration: none;
+
 }
 /* Menu headings in sidebar */
 #menubar .menu h2 {
@@ -380,6 +428,8 @@ footer div a {
 /*Links under menus in sidebar */
 #menubar .menu ul li a {
 	font-size: 14px;
+	color: #9B62FF
+	font-family: 'Gloria Hallelujah', cursive; 
 }
 /* Menus in sidebar */
 .sidebar #menubar .menu {
@@ -397,8 +447,6 @@ footer .footerlinks {
 	display: none;
 }
 /* sidebar */
-
-
 #content .sidebar {
 	float: none;
 	width: 100%;
@@ -464,13 +512,9 @@ footer .footerlinks {
 	width: 95%;
 	margin-top: 40px;
 }
-/* Prices of products in catalog view */
-.productRow .productInfo .price {
-	font-size: 19px;
-}
 /* Content holders in catalog view */
 .productRow .productInfo .productContent {
-	font-size: 16px;
+	font-size: 30px;
 }
 /* Buy buttons in catalog view */
 .productRow .productInfo .buyButton {
@@ -524,6 +568,7 @@ footer .footerlinks p {
 @media screen and (max-width:480px) {
 /*Container for links in header */
 #mainWrapper header #headerLinks {
+	align-items: center;
 	width: 100%;
 	text-align: center;
 	background-color: rgba(190,190,190,1.00);
@@ -582,10 +627,12 @@ header #headerLinks a {
 	padding-left: 8%;
 }
 /* Main content which excludes the sidebar */
-#mainwrapper #content .mainContent {
+.mainContent {
 	margin-top: -81px;
 	text-align: center;
 	width: 100%;
 	padding-left: 0px;
 }
+
+
 }
